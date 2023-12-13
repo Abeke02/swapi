@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Результат запроса</h1>
+    {% if character %}
+        <h2>Информация о персонаже:</h2>
+        <p><strong>Name:</strong> {{ character.name }}</p>
+        <p><strong>Height:</strong> {{ character.height }}</p>
+        <p><strong>Hair color:</strong> {{ character.hair_color }}</p>
+        <p><strong>Skin color:</strong> {{ character.skin_color }}</p>
+        <p><strong>Eye color:</strong> {{ character.eye_color }}</p>
+        <p><strong>Birth year:</strong> {{ character.birth_year }}</p>
+        <p><strong>Gender:</strong> {{ character.gender }}</p>
+<!-- ... -->
+{% if character.homeworld %}
+    <h3>Информация о планете:</h3>
+    {% if planet_info %}
+        <p><strong>Name:</strong> <a href="{{ url_for('result_for_planet', planet_url=character.homeworld) }}">{{ planet_info.name }}</a></p>
+        <!-- Добавьте другие поля, если необходимо -->
+    {% else %}
+        <p style="color: red;">Ошибка при получении информации о планете.</p>
+    {% endif %}
+{% endif %}
+<!-- ... -->
+<!-- ... -->
+{% if character.films %}
+    <h3>Фильмы:</h3>
+    <ul>
+        {% for title in film_titles %}
+            <li>{{ title }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+<!-- ... -->
+
+        <!-- Добавьте другие поля, если необходимо -->
+    {% elif error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Вернуться на главную страницу</a>
+</body>
+</html>
