@@ -1,22 +1,28 @@
-# Название Вашего Проекта
+# Star wars API
 
-Описание проекта может содержать краткую информацию о его назначении, цели, и основных функциях.
+This project is designed to display character information from star wars
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
 
     ```bash
     git clone https://github.com/Abeke02/swapi.git
     ```
 
-2. Перейдите в каталог проекта:
+2. Go to the project directory:
 
     ```bash
     cd swapi
     ```
 
-## Использование
+## Usage
 
 ```bash
 python3 app.py
+
+## Author
+
+```bash
+Abdola @abeke.002.ta@gmail.com
+
