@@ -48,10 +48,10 @@ def get_data():
             film_titles = get_film_titles(character['films'])
             return render_template('result.html', character=character, planet_info=planet_info, film_titles=film_titles)
         else:
-            return render_template('result.html', error='Ошибка запроса')
+            return render_template('result.html', error='Status not allowed')
 
     except ValueError:
-        return render_template('index.html', error='Пожалуйста, введите корректное число.')
+        return render_template('index.html', error='Please, enter the correct number.')
 
 @app.route('/result')
 def result():
