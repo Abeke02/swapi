@@ -12,6 +12,16 @@ def get_film_titles(film_urls):
             film_titles.append(film_info['title'])
     return film_titles
 
+# def get_starships_name(starships_urls):
+#     starships_name = []
+#     for ss_url in starships_urls:
+#         response = requests.get(ss_url)
+#         if response.status_code == 200:
+#             ss_info = response.json()
+#             starships_name.append(ss_info['name'])
+#     return starships_name
+
+
 def get_planet_info(planet_url):
     response = requests.get(planet_url)
     if response.status_code == 200:
@@ -45,6 +55,7 @@ def get_data():
             character = response.json()
             planet_info = get_planet_info(character['homeworld'])
             film_titles = get_film_titles(character['films'])
+            # starships_name = get_starships_name(character['starships'])
             return render_template('result.html', character=character, planet_info=planet_info, film_titles=film_titles)
         else:
             return render_template('result.html', error='Ошибка запроса')

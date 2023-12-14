@@ -1,5 +1,5 @@
 body {
-    background: #000; /* Черный цвет фона */
+    background: #000; 
     color: #fff;
     margin: 0;
     padding: 0;
@@ -45,7 +45,7 @@ button:hover {
 }
 
 p {
-    margin: 0; /* Убираем внутренние отступы у абзацев */
+    margin: 0; 
 }
 .main-characters {
     margin-top: 20px;
@@ -66,34 +66,30 @@ strong {
     font-weight: bold;
 }
 
-/* Стили для ссылок на планеты */
 a {
     color: #007BFF;
     text-decoration: none;
-    transition: color 0.3s ease; /* Плавное изменение цвета при наведении */
+    transition: color 0.3s ease; 
 }
 
 a:hover {
     color: #0056b3;
 }
 
-/* Стили для ошибок */
 p.error-message {
     color: red;
     text-align: center;
 }
 
-/* Стили для фильмов */
 ul {
-    list-style-type: none; /* Убираем маркеры у списка */
+    list-style-type: none;
     padding: 0;
 }
 
 li {
-    margin-bottom: 5px; /* Отступы между элементами списка */
+    margin-bottom: 5px; 
 }
 
-/* Стили для кнопки возврата */
 a.return-link {
     margin-top: 20px;
     padding: 10px 15px;
@@ -103,7 +99,7 @@ a.return-link {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Плавное изменение цвета при наведении */
+    transition: background-color 0.3s ease; 
 }
 
 a.return-link:hover {
