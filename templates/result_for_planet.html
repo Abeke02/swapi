@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/style.css">
-    <title>Result for Planet</title>
+    <title>Star Wars Planets</title>
 </head>
 <body>
-    <h1>Информация о планете</h1>
+    <h1>Planet information</h1>
     {% if planet_info %}
         <p><strong>Name:</strong> {{ planet_info.name }}</p>
         <p><strong>Rotation Period:</strong> {{ planet_info.rotation_period }}</p>
@@ -23,8 +23,8 @@
     {% elif error %}
         <p style="color: red;">{{ error }}</p>
     {% endif %}
-    <a href="{{ url_for('index') }}">Вернуться на главную страницу</a>
+    <a href="{{ url_for('index') }}">Go back to main page</a>
     <br><br>
-    <a href="javascript:history.back()">Назад</a>
+    <a href="javascript:history.back()">Back</a>
 </body>
 </html>
