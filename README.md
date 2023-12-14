@@ -21,7 +21,7 @@ This project is designed to display character information from star wars
 ```bash
 python3 app.py
 ```
-## Usage
+## Author
 
 ```bash
 Abdola @abeke.002.ta@gmail.com
