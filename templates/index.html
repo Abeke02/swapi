@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
     <title>Star Wars Characters</title>
 </head>
 <body>
     <h1>Star Wars Characters</h1>
     <form action="/get_data" method="post">
-        <label for="x">Введите число от 1 до 83:</label>
+        <label for="x" class="input-label">Введите число от 1 до 83:</label>
         <input type="number" name="x" id="x" min="1" max="83" required>
         <button type="submit">Сделать запрос</button>
     </form>
     {% if error %}
-        <p style="color: red;">{{ error }}</p>
+        <p class="error-message">{{ error }}</p>
     {% endif %}
-    <br>
+        <div class="main-characters">
+            <p class="character">1 - <span class="character-name">Luke Skywalker</span></p>
+            <p class="character">2 - <span class="character-name">C-3PO</span></p>
+            <p class="character">3 - <span class="character-name">R2-D2</span></p>
+            <p class="character">4 - <span class="character-name">Darth Vader</span></p>
+            <p class="character">5 - <span class="character-name">Leia Organa</span></p>
+            <p class="character">6 - <span class="character-name">Owen Lars</span></p>
+            <p class="character">7 - <span class="character-name">Beru Whitesun Lars</span></p>
+            <p class="character">8 - <span class="character-name">R5-D4</span></p>
+            <p class="character">9 - <span class="character-name">Biggs Darklighter</span></p>
+            <p class="character">10 - <span class="character-name">Obi-Wan Kenobi</span></p>
+        </div>
 </body>
 </html>
