@@ -7,24 +7,16 @@
 1. Клонируйте репозиторий:
 
     ```bash
-    git clone https://github.com/ваш_логин/ваш_проект.git
+    git clone https://github.com/Abeke02/swapi.git
     ```
 
 2. Перейдите в каталог проекта:
 
     ```bash
-    cd ваш_проект
-    ```
-
-3. Установите зависимости:
-
-    ```bash
-    pip install -r requirements.txt
+    cd swapi
     ```
 
 ## Использование
 
-Опишите шаги для запуска вашего проекта. Возможно, у вас есть скрипты, которые нужно выполнить, или команды для запуска.
-
 ```bash
-python main.py
+python3 app.py
